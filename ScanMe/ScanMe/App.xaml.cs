@@ -13,7 +13,7 @@ namespace ScanMe
         {
             InitializeComponent();
 
-            MainPage = new ScanMe.MainPage();
+            MainPage = new NavigationPage(new ScanMe.MainPage());
         }
 
         protected override void OnStart()

@@ -4,8 +4,17 @@
              xmlns:local="clr-namespace:ScanMe"
              x:Class="ScanMe.MainPage">
 
-	<Label Text="Welcome to Xamarin Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+    <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand">
+        <Button Text="Scan Something"
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand"
+                Clicked="ScanButton_Clicked"/>
+        
+        <Label x:Name="lblScanResult"
+               Text="You haven't scanned anything"
+               HorizontalOptions="FillAndExpand"
+               HorizontalTextAlignment="Center"
+               VerticalOptions="CenterAndExpand"/>
+    </StackLayout>
 
 </ContentPage>
